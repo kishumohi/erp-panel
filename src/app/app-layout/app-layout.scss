@@ -7,7 +7,7 @@
     'sidebar header'
     'sidebar main';
   height: 100vh;
-  background-color: lightyellow;
+  // background-color: lightyellow;
 }
 
 /* Header */
@@ -31,7 +31,7 @@
 /* Main content area */
 .lt-body {
   grid-area: main;
-  background-color: lightcoral;
+  // background-color: lightcoral;
   padding: 10px;
   overflow-y: auto;
 }

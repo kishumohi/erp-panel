@@ -9,21 +9,22 @@
 }
 .das_child_title {
   grid-area: title;
-  background-color: #f0e68c;
+  // background-color: #f0e68c;
   display: flex;
+  gap: 10px;
   justify-content: space-evenly;
   height: 15vh;
 }
 .das_child_card {
   grid-area: card;
-  background-color: #f0a38c;
+  // background-color: #f0a38c;
   display: flex;
   justify-content: space-evenly;
   height: 20vh;
 }
 .das_child_chart {
   grid-area: chart;
-  background-color: #8cd4f0;
+  // background-color: #8cd4f0;
   display: flex;
   justify-content: space-evenly;
   height: 50vh;
