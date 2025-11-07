@@ -1,31 +1,70 @@
-.das_main {
+// .das_main {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-template-areas:
+//     'title title title title'
+//     'card card card card'
+//     'chart chart chart chart';
+//   gap: 15px;
+// }
+// .das_child_title {
+//   grid-area: title;
+//   // background-color: #f0e68c;
+//   display: flex;
+//   gap: 10px;
+//   justify-content: space-evenly;
+//   height: 15vh;
+// }
+// .das_child_card {
+//   grid-area: card;
+//   // background-color: #f0a38c;
+//   display: flex;
+//   justify-content: space-evenly;
+//   height: 20vh;
+// }
+// .das_child_chart {
+//   grid-area: chart;
+//   // background-color: #8cd4f0;
+//   display: flex;
+//   justify-content: space-evenly;
+//   height: 50vh;
+// }
+
+.dashboard {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    'title title title title'
-    'card card card card'
-    'chart chart chart chart';
-  gap: 15px;
+    'title'
+    'cards'
+    'charts';
+  gap: 20px;
+
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: lightgray;
 }
-.das_child_title {
+.dashboard_title {
+  margin-top: 20px;
   grid-area: title;
-  // background-color: #f0e68c;
-  display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
-  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 20px;
+  min-height: 100px;
 }
-.das_child_card {
-  grid-area: card;
-  // background-color: #f0a38c;
-  display: flex;
-  justify-content: space-evenly;
-  height: 20vh;
+
+.dashboard_card {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  min-height: 150px;
 }
-.das_child_chart {
-  grid-area: chart;
-  // background-color: #8cd4f0;
-  display: flex;
-  justify-content: space-evenly;
-  height: 50vh;
+
+.dashboard_charts {
+  grid-area: charts;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  min-height: 300px;
 }

@@ -1,0 +1,11 @@
+.dash-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  min-width: 200px;
+  border: 1px solid lightseagreen;
+  box-sizing: border-box;
+  padding: 10px;
+}
