@@ -23,9 +23,10 @@
 /* Sidebar */
 .lt-sidebar {
   grid-area: sidebar;
-  background-color: lightgreen;
-  padding: 1rem;
+  // background-color: lightgreen;
+  padding: 0px 8px;
   overflow-y: auto;
+  box-shadow: var(--box_shadows);
 }
 
 /* Main content area */

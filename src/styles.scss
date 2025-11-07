@@ -11,6 +11,51 @@ html {
 }
 
 // scss Variables
+// :root {
+//   --box_shadows: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+// }
+
 :root {
+  /* ===== 🎨 COLOR PALETTE ===== */
+  --primary-color: #6200ee;
+  --primary-light: #bb86fc;
+  --primary-dark: #3700b3;
+
+  --secondary-color: #03dac6;
+  --secondary-light: #66fff9;
+  --secondary-dark: #00a896;
+
+  --background-color: #f8f9fa;
+  --surface-color: #ffffff;
+
+  --text-color: #212121;
+  --text-light: #757575;
+  --border-color: #e0e0e0;
+
+  /* ===== ⚙️ LAYOUT SIZING ===== */
+  --max-content-width: 1200px;
+  --header-height: 64px;
+  --sidebar-width: 250px;
+  --border-radius: 8px;
+  --gap: 16px;
+  --padding: 16px;
+
+  /* ===== 🌈 EFFECTS ===== */
   --box_shadows: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+
+  --hover_shadows: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* ===== 🔁 TRANSITIONS ===== */
+  --transition: all 0.3s ease-in-out;
+
+  /* ===== 💡 FONT ===== */
+  --font-family: 'Roboto', 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 20px;
+
+  /* ===== 🧭 Z-INDEX ===== */
+  --z-header: 1000;
+  --z-sidebar: 900;
+  --z-overlay: 1100;
 }
