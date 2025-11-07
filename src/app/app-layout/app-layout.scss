@@ -25,7 +25,7 @@
   grid-area: sidebar;
   // background-color: lightgreen;
   padding: 0px 8px;
-  overflow-y: auto;
+  // overflow-y: auto;
   box-shadow: var(--box_shadows);
 }
 
@@ -34,7 +34,7 @@
   grid-area: main;
   // background-color: lightcoral;
   padding: 10px;
-  overflow-y: auto;
+  // overflow-y: auto;
 }
 
 /* Optional responsiveness */
