@@ -38,14 +38,14 @@
     'title'
     'cards'
     'charts';
-  gap: 10px;
+  // gap: 10px;
 
-  min-height: 100vh;
+  // min-height: 100vh;
   min-width: 100%;
   // background-color: lightgray;
 }
 .dashboard_title {
-  // margin-top: 20px;
+  margin-bottom: 10px;
   grid-area: title;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
@@ -54,6 +54,7 @@
 }
 
 .dashboard_card {
+  margin-bottom: 10px;
   grid-area: cards;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -62,6 +63,7 @@
 }
 
 .dashboard_charts {
+  margin-bottom: 10px;
   grid-area: charts;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

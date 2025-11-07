@@ -4,12 +4,14 @@
   min-height: 250px;
   min-width: 300px;
   padding: 10px;
-  border: 1px solid lightseagreen;
+  // border: 1px solid lightseagreen;
+  box-shadow: var(--box_shadows);
   box-sizing: border-box;
 
   .chart-placeholder {
     flex: 1;
     min-height: 200px;
-    border: 1px solid lightseagreen;
+    // border: 1px solid lightseagreen;
+    // box-shadow: var(--box_shadows);
   }
 }
