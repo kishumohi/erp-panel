@@ -1,0 +1,24 @@
+table {
+  width: 100%; /* Make table span full width */
+  border-collapse: collapse; /* Merge borders */
+}
+
+th,
+td {
+  border: 1px solid var(--border-color); /* Add borders to cells */
+  padding: 8px; /* Add padding inside cells */
+  text-align: left; /* Align text to the left */
+}
+
+th {
+  background-color: var(--primary-light); /* Light grey background for headers */
+  color: #333; /* Darker text color for headers */
+}
+
+tr:nth-child(even) {
+  background-color: var(--text-dark); /* Alternate row background color */
+}
+
+tr:hover {
+  background-color: var(--background-color); /* Highlight row on hover */
+}

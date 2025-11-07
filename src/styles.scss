@@ -1,13 +1,18 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 body,
 html {
-  font-family: roboto;
+  font-family: Poppins;
 }
 
 // scss Variables
@@ -20,6 +25,7 @@ html {
   --primary-color: #6200ee;
   --primary-light: #bb86fc;
   --primary-dark: #3700b3;
+  --primary-danger: #fc8686;
 
   --secondary-color: #03dac6;
   --secondary-light: #66fff9;
@@ -58,4 +64,58 @@ html {
   --z-header: 1000;
   --z-sidebar: 900;
   --z-overlay: 1100;
+
+  /* ====== Base Button ====== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: var(--box_shadows);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--hover_shadows);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  /* ====== Variants ====== */
+  .btn_primary {
+    background-color: var(--secondary-dark);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: #2e8b57; // a nice green shade
+    }
+  }
+
+  .btn_danger {
+    background-color: var(--primary-danger);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: #e63946; // a soft red shade
+    }
+  }
+
+  /* ====== Optional: Disabled State ====== */
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
 }

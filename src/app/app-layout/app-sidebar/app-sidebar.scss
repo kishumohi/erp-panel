@@ -62,3 +62,9 @@
     // color: var(--secondary-light);
   }
 }
+
+@media (max-width: 768px) {
+  .sd_nav_wrapper {
+    display: none;
+  }
+}
